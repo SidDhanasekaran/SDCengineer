@@ -1,0 +1,7 @@
+#Environment Setup
+
+Term 1 of the course will require Python 2, Python 3, OpenCV, MoviePy and juptyer. 
+
+# OS Choice - Ubuntu 16.04.1 LTS. 
+
+The environment can also be build on Windows with Docker. I had a lot of issues with Docker setup and found Ubuntu to be a much smoother option. 
