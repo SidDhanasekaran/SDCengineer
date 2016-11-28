@@ -1,13 +1,14 @@
 #Environment Setup
 
-Term 1 of the course will require Python 2, Python 3, OpenCV, MoviePy and juptyer. 
+Term 1 of the course will require Python 2, Python 3, OpenCV, Tensorflow, Keras, MoviePy and juptyer. 
 
 # OS Choice - Ubuntu 16.04.1 LTS. 
 
 The environment can also be build on Windows with Docker. 
 I had a lot of issues with Docker setup and found Ubuntu to be a much smoother option. 
 
-Step 1: Getting setup with Python
+<b> Step 1: Getting setup with Python </b>
+
 I used Anaconda to install everything using the terminal. 
 Downloading and install the Anaconda Python 3 distribution from Continuum Analytics "https://www.continuum.io/downloads"
 
