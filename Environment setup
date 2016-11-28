@@ -7,43 +7,62 @@ Term 1 of the course will require Python 2, Python 3, OpenCV, Tensorflow, Keras,
 The environment can also be build on Windows with Docker. 
 I had a lot of issues with Docker setup and found Ubuntu to be a much smoother option. 
 
-<b> Step 1: Getting setup with Python </b>
+Step 1 - Installing Python 2.7
 
-I used Anaconda to install everything using the terminal. 
-Downloading and install the Anaconda Python 3 distribution from Continuum Analytics "https://www.continuum.io/downloads"
+i) Navigate to https://www.continuum.io/ , download Anaconda Package for Python 2.7 and install it.
+This completes Python 2.7 installation in your local host.
 
-Use the following command in the terminal to install create a new environment with Python 3. 
+Step 2 - Installing Python 3.5
 
-> conda create --name=yourNewEnvironment python=3 anaconda
-> source activate yourNewEnvironment
+In Terminal Type "conda create -n SDCenvr python=3.5 anaconda"
 
-Step 2: Installing OpenCV
-Once you have Anaconda installed, first double check you are in your Python 3 environment:
->python
-Python 3.5.2 |Anaconda 4.1.1 (x86_64)| (default, Jul 2 2016, 17:52:12)
-[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-(Ctrl-d to exit Python)
-run the following command at the terminal prompt to get OpenCV:
-> conda install -c https://conda.anaconda.org/menpo opencv3
-then to test if OpenCV is installed correctly:
-> python
->>> import cv2
->>>
-(Ctrl-d to exit Python)
+This creates a new conda environment namely , 'SDCenvr' having python 3.5 installed.
 
-Step 3: Installing moviepy
-Moviepy package is for processing video in this project 
-To install moviepy run:
->pip install moviepy
-and check that the install worked:
->python
->>>import moviepy
->>>
-(Ctrl-d to exit Python)
+Post execution of the above command above you will get something like this To activate this environment , use:
 
-Step 4: Opening the code in a Jupyter Notebook
+$source activate SDCenvr
+
+To deactivate this environment , use:
+
+$source deactivate
+
+Step 3 - Installing TensorFlow
+
+i) In the Terminal Type $ conda install -c conda-forge tensorflow
+
+Step 4.-Keras
+
+i) In the terminal Type
+
+pip install keras
+
+Once you hit the above command , will get to see something like the below(these are few lines at the end):
+Successfully built keras theano
+Installing collected packages: theano, keras
+Successfully installed keras-1.1.0 theano-0.8.2
+Generally , we have two backend-frameworks for keras , one is TensorFlow and the other Theano. In SDCND , we shall be using TensorFlow
+Hence , there is a need to change the backend from theano to TF.
+
+ii) Type
+KERAS_BACKEND=tensorflow python -c "from keras import backend; print(backend._BACKEND)"
+
+Output:
+Using TensorFlow backend.
+
+Now , the backend for keras is successfully changed to TF.
+
+Step 5.-Installing OpenCV
+
+In the terminal Type
+conda install -c menpo opencv3=3.1.0
+
+Step 6 - Installing Moviepy
+
+In the terminal type pip install moviepy
+
+We installed all the softwares in our localhost using conda environment.
+
+Step 7 : Opening the code in a Jupyter Notebook
 You will complete this project in a Jupyter notebook.
 Anaconda comes with jupyter. Test it out with the following command. 
 
