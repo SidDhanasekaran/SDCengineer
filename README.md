@@ -4,6 +4,9 @@ This Repo will contain all the instructions and the code snippets used by me (Si
 #Topics
 1) Environment Setup
 
-2) Hugh transform for Line detection using OpenCV
+2) Lane Line detection using OpenCV
+    - The Ipython notbeook (Sid_lanelines) has the code for lane detection of an image and a video
+    - Test_images folder has the images and the videos used to test the code. 
+    
 
 
