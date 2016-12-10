@@ -24,6 +24,8 @@ This Repo will contain all the instructions and the code snippets used by me (Si
         
         * Hough lines to Weighted image: Super imposes the Hough lines on the original image. 
         
+  3) Traffic Sign Classification using Tensorflow and Convolutional Neural Network
+        
        
     
 
